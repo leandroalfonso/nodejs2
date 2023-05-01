@@ -12,15 +12,9 @@ app.get('/dados', (req, res) => {
     {id: 5, nome: 'Paulo'},
   ]
 
-
-
-  res.send(JSON.parse(dados))
+  res.json(dados)
 })
-
 
 app.listen(3000, () => {
   console.log('Example app listening on port 3000!')
-} )
-
-
-
+})
