@@ -2,7 +2,7 @@ const express = require('express')
 
 const app = express()
 
-app.get('/', (req, res) => {
+app.get('/dados', (req, res) => {
 
   const dados = [
     {id: 1, nome: 'João'},
@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
   ]
 
 
-  res.send(dados)
+
+  res.send(JSON.parse(dados))
 })
 
 
