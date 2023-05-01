@@ -3,7 +3,17 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+
+  const dados = [
+    {id: 1, nome: 'João'},
+    {id: 2, nome: 'Maria'},
+    {id: 3, nome: 'José'},
+    {id: 4, nome: 'Pedro'},
+    {id: 5, nome: 'Paulo'},
+  ]
+
+
+  res.send(dados)
 })
 
 
